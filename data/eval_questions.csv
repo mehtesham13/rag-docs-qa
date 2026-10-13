@@ -1,0 +1,51 @@
+question,source,relevant_sections
+How do I evaluate a model on time-ordered data without training on the future?,cross_validation.rst,Time Series Split;Cross validation of time series data
+Which splitter keeps all samples from the same patient in the same fold?,cross_validation.rst,Group K-fold;Cross-validation iterators for grouped data;StratifiedGroupKFold;Leave One Group Out
+Why should I shuffle data before K-fold and when is it a bad idea?,cross_validation.rst,A note on shuffling;K-fold
+How can I test whether my classifier's score is better than chance?,cross_validation.rst,Permutation test score
+What is the difference between stratified and plain k-fold?,cross_validation.rst,Stratified K-fold;Cross-validation iterators with stratification
+How do I get calibrated probabilities from a classifier whose scores are not reliable?,calibration.rst,Calibrating a classifier;Probability calibration;Usage
+When should I use isotonic calibration instead of the sigmoid method?,calibration.rst,Isotonic;Sigmoid;Calibrating a classifier
+How can I choose a decision threshold other than 0.5 for a binary classifier?,classification_threshold.rst,Tuning the decision threshold;Post-tuning the decision threshold;Options to tune;Manually setting
+Which metric should I use when classes are very imbalanced and I care about the rare class?,model_evaluation.rst,"Balanced accuracy score;Precision, recall and F-measures;Binary classification;Matthews correlation coefficient"
+What does the area under the ROC curve measure?,model_evaluation.rst,Receiver operating characteristic;Binary case
+How does the Brier score evaluate probability predictions?,model_evaluation.rst,Brier score loss
+What is the Matthews correlation coefficient good for?,model_evaluation.rst,Matthews correlation coefficient
+How do I write my own scoring function for grid search?,model_evaluation.rst,Adapting predefined metrics via;Creating a custom scorer;Callable scorers
+Why is mean absolute percentage error risky when the target is near zero?,model_evaluation.rst,Mean absolute percentage error
+What baseline model should I compare my classifier against?,model_evaluation.rst,Dummy estimators
+How do I search hyperparameters more cheaply than trying every combination?,grid_search.rst,Randomized Parameter Optimization;Searching for optimal parameters with successive halving
+How does successive halving decide which candidates to keep?,grid_search.rst,Searching for optimal parameters with successive halving;Aggressive elimination
+How can I tune parameters of a step inside a pipeline?,grid_search.rst,Composite estimators and parameter spaces;Access to nested parameters
+How do I apply different preprocessing to numeric and text columns of a dataframe?,compose.rst,ColumnTransformer for heterogeneous data
+How do I avoid recomputing an expensive transformer in a pipeline?,compose.rst,Caching transformers
+How can I log-transform the target in a regression model?,compose.rst,Transforming target in regression
+Which gradient boosting model is fastest on large datasets?,ensemble.rst,Histogram-Based Gradient Boosting;Why it's faster;Gradient-boosted trees
+Can gradient boosting handle missing values without imputation?,ensemble.rst,Missing values support
+How do I force a model's prediction to increase with a feature?,ensemble.rst,Monotonic Constraints
+What does the learning rate do in gradient boosting?,ensemble.rst,Shrinkage via learning rate
+How do extremely randomized trees differ from random forests?,ensemble.rst,Extremely Randomized Trees;Random forests and other randomized tree ensembles
+How do I combine several different models by having another model learn from their predictions?,ensemble.rst,Stacked generalization
+Why can impurity-based feature importance be misleading?,permutation_importance.rst,Relation to impurity-based importance in trees;Misleading values on strongly correlated features;Permutation feature importance
+How is permutation importance computed?,permutation_importance.rst,Outline of the permutation importance algorithm;Permutation feature importance
+How do I show how predictions change as one feature varies?,partial_dependence.rst,Partial dependence plots;Individual conditional expectation;Partial Dependence
+Which method isolates anomalies by random splits?,outlier_detection.rst,Isolation Forest
+What is the difference between novelty detection and outlier detection?,outlier_detection.rst,Novelty and Outlier Detection;Novelty Detection;Overview of outlier detection methods
+How does Local Outlier Factor decide a point is abnormal?,outlier_detection.rst,Local Outlier Factor;Novelty detection with Local Outlier Factor
+How do I fill missing values using the other features?,impute.rst,Multivariate feature imputation;Nearest neighbors imputation;Flexibility of IterativeImputer
+How can I keep track of which values were imputed?,impute.rst,Marking imputed values
+How do I encode a high-cardinality categorical feature using the target?,preprocessing.rst,Target Encoder
+Which scaler is robust to outliers?,preprocessing.rst,Scaling data with outliers
+How do I group rare categories together during one-hot encoding?,preprocessing.rst,Infrequent categories;Encoding categorical features
+How do I turn a continuous feature into bins?,preprocessing.rst,K-bins discretization;Discretization
+Which clustering algorithm finds clusters of arbitrary shape and marks noise points?,clustering.rst,DBSCAN;HDBSCAN;OPTICS
+How do I evaluate clustering when I do not have ground truth labels?,clustering.rst,Silhouette Coefficient;Calinski-Harabasz Index;Davies-Bouldin Index
+How do I pick the regularization strength for Lasso automatically?,linear_model.rst,Using cross-validation;Information-criteria based model selection;AIC and BIC criteria
+Which linear regression is robust to outliers in the data?,linear_model.rst,Huber Regression;RANSAC;Theil-Sen estimator;Different scenario and useful concepts
+How do I predict a conditional median or other quantile?,linear_model.rst,Quantile Regression
+Which logistic regression solver should I use for large datasets?,linear_model.rst,Solvers;Differences between solvers
+How do I prevent a decision tree from overfitting by pruning?,tree.rst,Minimal Cost-Complexity Pruning;Tips on practical use
+How should I handle unbalanced classes with an SVM?,svm.rst,Unbalanced problems
+Why should I scale inputs before training an SVM or a neural network?,svm.rst,Tips on Practical Use
+How do I visualize high-dimensional data in two dimensions while keeping local structure?,manifold.rst,t-distributed Stochastic Neighbor Embedding;Tips on practical use
+What does Naive Bayes assume about the features?,naive_bayes.rst,Naive Bayes
